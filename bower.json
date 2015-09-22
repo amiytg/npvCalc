@@ -1,0 +1,17 @@
+{
+  "name": "npvCalc",
+  "version": "0.0.0",
+  "authors": [
+    "Amit Gupta <amiytg@gmail.com>"
+  ],
+  "description": "NPV and IRR calculator",
+  "main": "npv.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

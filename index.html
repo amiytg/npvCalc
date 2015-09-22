@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script language="JavaScript" src="npv.js"></script>
+</head>
+<body>
+    <form name="npv">
+        Discount         <input type="number" name="discountRate" /><br />
+
+        1. <input type="number" name="cashflow[]" /><br />
+        2. <input type="number" name="cashflow[]" /><br />
+        3. <input type="number" name="cashflow[]" /><br />
+        4. <input type="number" name="cashflow[]" /><br />
+        5. <input type="number" name="cashflow[]" /><br />
+        6. <input type="number" name="cashflow[]" /><br />
+        7. <input type="number" name="cashflow[]" /><br />
+        8. <input type="number" name="cashflow[]" /><br />
+        <input type=button value="Calculate NPV" onclick="document.getElementById('npv').innerHTML = NPV(this.form.elements['discountRate'].value, this.form.elements['cashflow[]']); document.getElementById('irr').innerHTML = IRR(this.form.elements['cashflow[]'])" />
+    </form>
+    NPV=<span id="npv"></span>
+    IRR=<span id="irr"></span>
+</body>
+</html>
